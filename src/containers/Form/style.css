@@ -1,0 +1,10 @@
+.messageEnvoyer{
+    display: flex;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #32CD32;
+    color: white;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: large;
+}
