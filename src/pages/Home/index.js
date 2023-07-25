@@ -124,9 +124,9 @@ const Page = () => {
       <div className="col presta">
         <h3>Notre derniére prestation</h3>
         <EventCard
-          imageSrc={last?.cover || 'coucou'}
-          title={last?.title || 'coucou'}
-          date={new Date(last?.date) || 'coucou'}
+          imageSrc={last?.cover || 'undefined'}
+          title={last?.title || 'undefined'}
+          date={new Date(last?.date) || 'undefined'}
           small
           label="boom"
         />

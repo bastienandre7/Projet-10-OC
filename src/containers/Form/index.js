@@ -9,7 +9,6 @@ const mockContactApi = () => new Promise((resolve) => { setTimeout(resolve, 1000
 
 const Form = ({ onSuccess, onError }) => {
   const [sending, setSending] = useState(false);
-  // const [message, setMessage] = useState();
   const sendContact = useCallback(
     async (evt) => {
       evt.preventDefault();
@@ -18,7 +17,6 @@ const Form = ({ onSuccess, onError }) => {
       try {
         await mockContactApi();
         setSending(false);
-        // setMessage("Message envoyé !");
       } catch (err) {
         setSending(false);
         onError(err);
@@ -41,7 +39,7 @@ const Form = ({ onSuccess, onError }) => {
             titleEmpty
           />
           <Field placeholder="" label="Email" />
-          <Button onChange={setSending} onClick={onSuccess} type={BUTTON_TYPES.SUBMIT} disabled={sending}>
+          <Button onClick={onSuccess} type={BUTTON_TYPES.SUBMIT} disabled={sending}>
             {sending ? "En cours" : "Envoyer"}
           </Button>
         </div>
