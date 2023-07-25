@@ -53,7 +53,6 @@ const Form = ({ onSuccess, onError }) => {
           />
         </div>
       </div>
-      {/* {message && <div className="messageEnvoyer">{message}</div>} */}
     </form>
   );
 };
